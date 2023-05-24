@@ -28,7 +28,8 @@
         </div>
     </body>
         <script type="text/javascript">
-            const youtubeEmbedRoot = 'https://www.youtube.com/embed/Do9IUBCWMCA?autoplay=1&loop=1&controls=0&mute=1'
+            //const youtubeEmbedRoot = 'https://www.youtube.com/embed/Do9IUBCWMCA?autoplay=1&loop=1&controls=0&mute=1'
+            const youtubeEmbedRoot = 'https://www.youtube.com/embed/FkLwOfD_E1k?autoplay=1&loop=1&controls=0&mute=1'
             const params = (new URL(window.location.href)).searchParams
             const viewstate = params.get('viewstate') || 640
 
@@ -36,7 +37,7 @@
             video.setAttribute('width', viewstate)
             video.setAttribute('height', viewstate)
 
-            const videoId = params.get('video') || 'Do9IUBCWMCA'
+            const videoId = params.get('video') || 'FkLwOfD_E1k'
             const youtubeUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&controls=0&mute=1`
             video.setAttribute('src', youtubeUrl)
         </script>
